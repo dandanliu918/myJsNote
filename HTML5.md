@@ -1,11 +1,12 @@
 # JavaScript笔记整理
- ##一，HTML5语法的变化
+ ## 一，HTML5语法的变化
+ 
  1.DOCTYPE及字符编码
  2.大小写都可以
  3.具有布尔值属性
  4.部分标签可以省略
  
- ##二，语义标签化
+ ## 二，语义标签化
   
   1.section
   ```
@@ -101,13 +102,13 @@
  <output name="x" for="a b">150</output>
  </form>
  ```
- ##三 新增标签的兼容问题
+ ## 三 新增标签的兼容问题
  ```
  1.HTML5语义化标签在IE6-8下，对于不支持的标签不会有任何的样式,也默认的当成行内元素来出来,所以在样式表里要对这些标签定义一下 它默认的display
  2.通过引入如下js来解决ie9以下新增标签的兼容问题
  3.<!--[if lt IE 9]> <script type="text/javascript" src="html5.min.js"></script> <![endif]--> 
  ```
- ##四，新增input元素的种类
+ ## 四，新增input元素的种类
  ```
  1) search : 搜索输入框
  2) tel :  电话号码输入框
@@ -122,9 +123,9 @@
  11) month :  显示月
  12) week  : 显示周
  ```
- ##五，表单新增属性
+ ## 五，表单新增属性
  
- ####表单新特性
+ #### 表单新特性
  ```
  1）placeholder
    - 输入框占位符，常用作输入提示，在光标聚焦时，占位符自动消失
@@ -139,7 +140,7 @@
   - formnovalidate 用于 submit类型的提交按钮。
  	
  ```
- ####表单验证
+ #### 表单验证
  ```
  1）validity对象，通过下面的valid可以查看验证是否通过
  - oText.addEventListener("invalid",fn1,false);
@@ -151,7 +152,7 @@
    - setCustomValidity(); 自定义验证
    
  ```
- ##六，全局属性
+ ## 六，全局属性
  1.data-yourvalue
   *.自定义属性 data-name :  dataset.name /data-name-first  :  dataset.nameFirst 
 
